@@ -1,54 +1,59 @@
-# StarWiki / 天文馆 XR 剧情 Demo
+# StarWiki · 天文馆 XR 剧情 Demo
 
-仓库：https://github.com/MiLab-Bit/starwiki
-
-可玩剧情原型：双线体验——《航向火星·救援队归来》×《回到普林斯顿》第 1 集。  
-引擎：[Ren'Py](https://www.renpy.org/) 8.x · 分辨率 1280×720（16:9）
+面向**上海天文馆**的可玩剧情体验样例。  
+双线叙事，任选其一进入；含主题曲《The Road Home / 星河有归》。
 
 出品：上海端点星幻境科技有限公司  
-制作：AIGC艺术家 · 吟游诗人Lab
+制作：AIGC艺术家 · 吟游诗人Lab  
 
-## 仓库说明
+引擎：[Ren'Py](https://www.renpy.org/) 8.x · 1280×720（16:9）
 
-本仓库为**完整工程源码**（脚本、图像、音频、字体），可在 Ren'Py SDK 中直接打开与修改。
+---
+
+## 剧情线
+
+### 《航向火星·救援队归来》
+
+你是启明基地的「替补」守站人。沙尘暴过后，氧气、电力与通讯告急，救援船「曙光号」还要二十多个小时才能抵达。
+
+在向导小艾的协助下，你要完成损伤评估、取水、制氧、能源调度，并最终与救援会合。每一个选择都会留下后果——修过的天线、放弃的冰芯、省下的电，都可能在后面某一刻决定你能不能撑到回家。
+
+这条线讲的是行星生存与抉择：在火星上，留下的人，就是守站人。
+
+### 《回到普林斯顿》第 1 集
+
+导航把你带进了不该走的路。穿过一扇「洞」，你来到 1933 年的普林斯顿，遇见一位毒舌、认真、又有点好笑的阿尔伯特。
+
+从以太幽灵到赛马般的光实验，再到火车上的镜子：你会亲手发现——光速对谁都一样，真正被改写的，是你的时间。怀表上，「你的一秒」和「地球的一秒」逐渐撕开。回到今天你会明白：口袋里的导航，其实一直在用相对论圆谎。
+
+这是关于时间相对性的一集故事，不是课堂讲义。
+
+---
+
+## 本仓库
+
+完整工程源码（脚本、图像、音频、字体），可用 Ren'Py SDK 打开运行。
 
 ```
 TianwenguanXRDemo/
-├── project.json          # Ren'Py 工程元数据
+├── project.json
 ├── game/
-│   ├── script.rpy        # 入口与枢纽
-│   ├── mars_rescue.rpy   # 火星救援线
-│   ├── princeton_ep1.rpy # 普林斯顿第 1 集
-│   ├── screens.rpy       # UI / HUD / 片尾滚词
-│   ├── options.rpy       # 工程配置与版本号
-│   ├── audio_defs.rpy    # 音频定义
-│   ├── images_defs.rpy   # 图像与 Q 头像逻辑
-│   ├── simhei.ttf        # 界面字体
-│   ├── audio/            # BGM / 环境音 / 主题曲
-│   └── images/           # 场景与 busts
+│   ├── script.rpy          # 入口
+│   ├── mars_rescue.rpy     # 火星线
+│   ├── princeton_ep1.rpy   # 普林斯顿线
+│   ├── screens.rpy         # 界面
+│   ├── audio/ · images/
 └── README.md
 ```
 
-## 本地运行
+### 本地运行
 
-1. 安装 [Ren'Py 8.5+](https://www.renpy.org/latest.html)
-2. 将本仓库放入 Ren'Py 的 `projects` 目录，或在启动器中选择「偏好 → Projects Directory」指向本仓库父目录
-3. 启动器中选中 **TianwenguanXRDemo** → Launch Project
+1. 安装 [Ren'Py 8.5+](https://www.renpy.org/latest.html)  
+2. 将本仓库加入 Projects  
+3. 启动 **TianwenguanXRDemo**
 
-也可命令行（将 SDK 路径换成你的本机路径）：
+浏览器试玩请见 Web 仓库：[MiLab-Bit/StarWiki_web](https://github.com/MiLab-Bit/StarWiki_web)
 
-```bat
-renpy.exe TianwenguanXRDemo
-```
+---
 
-## 博物馆体验版
-
-面向馆方演示的 **Windows PC 可执行包**请使用另行提供的「博物馆体验版」压缩包（含 `TianwenguanXRDemo.exe`，无需安装 Ren'Py）。
-
-## 版本
-
-见 `game/options.rpy` 中 `config.version`。
-
-## 许可与用途
-
-仅用于方案展示、评审演示与双方合作对齐。未经书面授权请勿商用转售。
+仅供展示与交流。未经授权请勿商用转售。
