@@ -1,0 +1,29 @@
+# Ren'Py / OS
+*.rpyc
+*.rpymc
+*.rpyb
+*~
+*.bak
+*.tmp
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Runtime
+game/saves/
+game/cache/
+log.txt
+errors.txt
+traceback.txt
+files.txt
+
+# Local tools / backups
+_gen_audio.py
+**/_pre_cutout_backup/
+**/_cutout_v2/
+**/__pycache__/
+
+# IDE
+.idea/
+.vscode/
+*.swp
