@@ -1,5 +1,15 @@
 # StarWiki · 天文馆 XR 剧情 Demo
 
+> **🌐 在线试玩（Web 版）**：由 `web` 分支经 GitHub Pages 发布 → https://milab-bit.github.io/starwiki/
+>
+> **📂 仓库分支导航**
+>
+> | 分支 | 内容 |
+> |------|------|
+> | `main` | 工程源码（Ren'Py 脚本 / 图像 / 音频 / 字体）|
+> | `web` | 编译好的 Web 版产物（Ren'Py Web/WASM，GitHub Pages 部署用）|
+> | `docs/design` | 设计文档（策划 / 叙事 / 美术 / 声音 / 分镜关卡，共 15 份 .md）|
+
 面向**上海天文馆**的可玩剧情体验样例。  
 双线叙事，任选其一进入；含主题曲《The Road Home / 星河有归》。
 
@@ -52,7 +62,7 @@ TianwenguanXRDemo/
 2. 将本仓库加入 Projects  
 3. 启动 **TianwenguanXRDemo**
 
-浏览器试玩请见 Web 仓库：[MiLab-Bit/StarWiki_web](https://github.com/MiLab-Bit/StarWiki_web)
+Web 版（编译产物）现统一收纳在本仓库的 **`web` 分支**，由 GitHub Pages 发布：<https://milab-bit.github.io/starwiki/>（上线前需在仓库 **Settings → Pages** 将源分支设为 `web`、目录选 root）。
 
 ---
 
