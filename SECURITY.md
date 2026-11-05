@@ -1,0 +1,3 @@
+# starwiki — Security Context
+
+The game is a Ren'Py story/demo rather than a service managing finances or credentials. Review player text interpolation, file and URL opens, downloaded assets, web export, third-party scripts and license compliance where relevant. Never introduce network telemetry, player tracking or secret handling absent a feature requirement. Test only with local demo fixtures. Security reports must cite exact source and safe reproduction; do not publish any actual secrets/exploit details. Owner controls publication and deploy.
